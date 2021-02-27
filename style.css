@@ -1,50 +1,51 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Arial", sans-serif;
-}
-
-body{
+  }
+  
+  body {
     height: 100vh;
     width: 100vw;
     display: grid;
     place-items: center;
-}
-
-nav{
+  }
+  
+  nav {
     height: 70px;
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
     display: flex;
     align-items: center;
     padding: 2vw;
     font-size: small;
-}
-
-nav img{
+  }
+  
+  nav img {
     height: 5vh;
-    width:5vh;
+    width: 5vh;
     border-radius: 50%;
     background-color: #333;
-}
-
-nav >*{
-    margin: 5px;
+  }
+  
+  nav > * {
+    margin: 12px;
     color: rgb(255, 255, 255);
-}
-
-.main-logo{
+    font-weight: bold;
+  }
+  
+  .main-logo {
     width: 100%;
     padding: 0 20% 5vh;
-}
-
-a:hover{
+  }
+  
+  a:hover {
     text-decoration: underline;
-}
-
-.buttons button {
+  }
+  
+  .buttons button {
     color: #fff;
     background-color: #678fff;
     padding: 10px 15px;
@@ -52,76 +53,76 @@ a:hover{
     margin: 5vh 1vh 0;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0);
-}
-
-.buttons button:hover {
+  }
+  
+  .buttons button:hover {
     border: 1px solid #ddd;
     cursor: pointer;
-}
-
-form{
+  }
+  
+  form {
     width: 47.5vw;
-}
-
-form p {
+  }
+  
+  form p {
     font-size: 13px;
     text-align: center;
     margin-top: 5vh;
-}
-
-:root{
+  }
+  
+  :root {
     --icon-padding: 20px;
     --input-height: 50px;
-}
-
-a{
-    text-decoration:none;
-}
-.search-input input{
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .search-input input {
     width: 100%;
     height: 50px;
     border-radius: 25px;
     padding: 0 50px;
     border: 1px solid #dfe1e5;
     font-size: 16px;
-}
-
-.search-input{
+  }
+  
+  .search-input {
     position: relative;
-}
-
-.icon{
+  }
+  
+  .icon {
     position: absolute;
-    top:25%;
-    opacity:0.35;
-}
-
-.search-icon{
+    top: 25%;
+    opacity: 0.35;
+  }
+  
+  .search-icon {
     left: var(--icon-padding);
-}
-
-.mic-icon{
+  }
+  
+  .mic-icon {
     right: var(--icon-padding);
-}
-
-.buttons{
+  }
+  
+  .buttons {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-body {
-    height: 100vh;
-     background: linear-gradient(90deg,#43cea2, #185a9d);
-}
+  }
   
-.slider-thumb::before {
+  body {
+    height: 100vh;
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+  }
+  
+  .slider-thumb::before {
     position: absolute;
     content: "";
     left: 12%;
     top: 15%;
-    width: 1500px;
-    height: 700px;
+    width: 75%;
+    height: 75%;
     background: #ffffff;
     border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
     will-change: border-radius, transform, opacity;
@@ -129,27 +130,28 @@ body {
     display: block;
     z-index: -1;
     -webkit-animation: sliderShape 5s linear infinite;
-}
-
-@keyframes sliderShape{
-    0%,100%{
-        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-        transform: translate3d(0,0,0) rotateZ(0.01deg);
-    }
-    34%{
-        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
-        transform:  translate3d(0,5px,0) rotateZ(0.01deg);
-    }
-    50%{
-        transform: translate3d(0,0,0) rotateZ(0.01deg);
-    }
-    67%{
-        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
-        transform: translate3d(0,-3px,0) rotateZ(0.01deg);
-    }
-}
+  }
   
-footer {
+  @keyframes sliderShape {
+    0%,
+    100% {
+      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+    34% {
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    }
+    50% {
+      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+      transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
+  }
+  
+  footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -160,3 +162,4 @@ footer {
     padding-left: 2.5%;
     color: rgb(255, 255, 255);
   }
+  
